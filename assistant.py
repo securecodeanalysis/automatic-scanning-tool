@@ -1,9 +1,10 @@
+#!/usr/bin/python
 # assistant.py
 from rich.console import Console
 from rich.progress import track
 import time
 import argparse
-from modules import recon, foothold, shell, postex, privesc, loot, report
+from modules import recon#, foothold, shell, postex, privesc, loot, report
 
 console = Console()
 

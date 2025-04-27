@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # modules/recon.py
 import os
 from rich.console import Console
